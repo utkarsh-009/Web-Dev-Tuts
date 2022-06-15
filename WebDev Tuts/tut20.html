@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed and sticky in CSS</title>
+    <style>
+        .container {
+            border: 4px solid black;
+            background-color: khaki;
+            height: 3000px;
+        }
+
+        .box {
+            /* To make box inline */
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        #box3 {
+            /* These are all position of CSS  */
+            /*
+            position: absolute; (This allows us to use top/left/right/bottom properties and then setting its value we will get relative position to its parent. [in this ex we have container class as its parent])
+            position: relative; (This allows us to use top/left/right/bottom properties and then setting its value we will get relative position to its normal position )
+            position: static; (by default)
+            position: sticky; (It will behave like a relatively-positioned element until it reaches a specified point and then starts behaving like a statically-positioned element.)
+            position: fixed; (It is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled)
+            
+            */
+
+            /* position: relative;
+            top: 20px; */
+
+            /* position: absolute;
+            left: 50px; */
+
+            /* position: sticky;
+            left: 20px; */
+
+            position: fixed;
+            top: 500px;
+
+            /* NOTE: The difference between position fixed vs sticky is that fixed always positions an element relative to the viewport, 
+            while sticky behaves like a regular element until it reaches the defined offset and then becomes fixed
+            s*/
+
+        }
+
+        #box2 {
+            position: sticky;
+            top: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

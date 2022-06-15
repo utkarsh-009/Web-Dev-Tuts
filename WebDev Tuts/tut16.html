@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats and Clear in CSS</title>
+    <style>
+        * {
+
+            box-sizing: border-box;
+        }
+
+        #cont {
+            background-color: rgb(253, 150, 255);
+            margin: 20px;
+            border: 2px solid black;
+            width: 1300px;
+            padding: 10px 10px 10px 10px;
+            height: 800px;
+            /*  margin property: auto allows to horizontally center the element within its container. */
+            margin: auto;
+
+            /* The clear property controls the flow next to floated elements.
+            The clear property specifies what should happen with the element that is next to a floating element. */
+
+
+        }
+
+        .item {
+            background-color: aqua;
+            margin: 20px;
+            border: 2px solid black;
+            width: 1000px;
+            padding: 10px 10px;
+        }
+
+        #fruits {
+            /* The float property is used for positioning and formatting content */
+            /* Note we also need to set width while using float property */
+            float: left;
+            width: 45%;
+        }
+
+        #vegetables {
+
+            float: right;
+            width: 45%;
+        }
+
+        #dairy {
+            /* The float property is used for positioning and formatting content */
+            /* Note we also need to set width while using float property */
+            clear: both;
+            width: 95%;
+            margin: 30px;
+
+        }
+
+        p {
+            /* The text-align property specifies the horizontal alignment of text in an element.  */
+            text-align: left;
+            /* text-align: justify; (This is used fill all the spaces of alignment ) */
+        }
+
+        h1 {
+            margin: auto;
+            width: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <h1>This is Floats and Clear TUT</h1>
+        <div class="item" id="fruits">
+            <h3>Fruits</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam ad alias et quasi quia
+                perspiciatis,
+                accusantium qui? Nemo ducimus vitae rem et obcaecati! Hic ipsum aspernatur totam impedit deleniti
+                dolorem
+                quos qui
+                eaque?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus totam aperiam, nemo hic omnis
+                pariatur nam, impedit rerum eligendi accusamus eos. Ipsam quisquam aut quam, aliquid dicta velit
+                voluptates cupiditate commodi ad.
+            </p>
+        </div>
+
+        <div class="item" id="vegetables">
+            <h3>Vegetables</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ducimus pariatur, est tempora nihil
+                fuga
+                dolore
+                laboriosam perspiciatis optio natus qui dolorum doloribus a vel iure dicta eligendi porro. At!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus quod consequuntur a rem
+                perspiciatis eligendi quasi distinctio ea eos praesentium, ipsam, corporis beatae. Molestias sunt velit
+                mollitia minus saepe harum quam!
+            </p>
+        </div>
+
+        <div class="item" id="dairy">
+            <h3>Dairy</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur provident eveniet dolores
+                porro, enim, hic omnis repellat, maiores corporis voluptate architecto explicabo voluptatibus voluptatem
+                quisquam a
+                quidem temporibus. Aperiam, facilis esse!</p>
+        </div>
+
+        <div class="item" id="dairy">
+            <h3>Dairy</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequuntur provident eveniet dolores
+                porro, enim, hic omnis repellat, maiores corporis voluptate architecto explicabo voluptatibus voluptatem
+                quisquam a
+                quidem temporibus. Aperiam, facilis esse!</p>
+        </div>
+    </div>
+</body>
+
+</html>

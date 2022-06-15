@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psedudo Selectors, Styling Links & Buttons</title>
+</head>
+<style>
+    .container {
+        background-color: rgb(253, 150, 255);
+        margin: 20px;
+        border: 2px solid black;
+        width: 700px;
+        padding: 10px 10px 10px 10px;
+        margin: auto;
+    }
+
+    a {
+        /* To remove underline from text in anchor tag */
+        text-decoration: none;
+    }
+
+    /* A pseudo-class is used to define a special state of an element. */
+    /* Examples are given below */
+
+    /* hover selector is used to select elements when you mouse over them.  */
+    a:hover {
+        /* color changes to white where mouse is hovered */
+        color: white;
+        background-color: black;
+    }
+
+    /* behavior after link is clicked */
+    a:visited {
+        color: orange;
+    }
+
+    /* The :active selector is used to select and style the active link. */
+    a:active {
+        color: purple;
+    }
+
+    .btn {
+        /* Adding properties to Button and Anchor Tag */
+        background-color: crimson;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+
+        /* The cursor property specifies the mouse cursor to be displayed when pointing over an element. */
+        cursor: pointer;
+        /* font size of the text in button and anchor tag */
+        font-size: 15px;
+        border-radius: 4px;
+
+    }
+</style>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is button</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam ad alias et quasi quia
+            perspiciatis,
+            accusantium qui? Nemo ducimus vitae rem et obcaecati! Hic ipsum aspernatur totam impedit deleniti
+            dolorem
+            quos qui
+            eaque?
+        </p>
+        <!-- The HTML anchor tag defines a hyperlink that links one page to another page. -->
+        <a href="https://google.com" class="btn"> Read More</a>
+        <!-- button tag is used to create button  -->
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>

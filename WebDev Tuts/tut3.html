@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Forms, Input Tags, Division Tag, Button Tag, Date Selection & Number
+    Selection Tag, Radio Button Single/Double Selection, Label Tag, Text Area Tag, Select Tag
+  </title>
+</head>
+
+<body>
+
+  <!-- hr tag is used to make horizontal ruler -->
+  <hr>
+  <h2>HTML Form Tutorial</h2>
+  <form action="backend.php">
+    <!-- action tag will help us to submit data of form in backend.php file. -->
+    <div>
+      <!-- Label tag is used to provide a usability improvement for mouse users  i.e, if a user clicks on the text within the <label> element, it toggles the control. -->
+      <label for="name"> Name: </label>
+      <!-- div tag is block element which takes whole block and next element will in next line(block)  -->
+      <input type="text" name = "myName" id = "name"/>
+    </div>
+    <!-- NOTE: input tag is an inline element whereas div is block element. Hence, br tag should be used  -->
+    <br>
+
+    <div>
+      Role: <input type="text" />
+    </div>
+
+    <br>
+    <div>
+      Email: <input type="email" name="myEmail">
+      <!-- In this input tag, name ="myEmail" , in which we will be able to take value from myEmail in backend  -->
+    </div>
+    <br>
+    <!-- type is value of data-type(date) and  name is key which will store data as name myDate  -->
+    Date: <input type="date" name="myDate">
+    </div>
+    <br>
+    <br>
+
+    <div>
+      Bonus Percent: <input type="number" name="myBonus">
+    </div>
+    <br>
+    <div>
+      <label for="eligiblebox" > Are you eligible?: </label>
+      <input type="checkbox" name="myEligibility" id = "eligiblebox">
+    </div>
+    <br>
+    <!-- as key in both female and male is myGender, therefore only either of them will be selected -->
+    <div>
+      Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender">
+    </div>
+    <br>
+    <!-- TEXT AREA TAG: for feedback/description box -->
+    <div>
+      Write About Yourself:
+    </div>
+    <br>
+    <div>
+      <textarea name="myDesc" cols="50" rows="10"></textarea>
+    </div>
+    
+    <br>
+   <!-- SELECT TAG:  -->
+    <div>
+      <label for="Car">Dream Car: </label>
+      <select name="myCar" id="Car">
+        <br>
+        <option value="Fer"> Ferrari </option>
+        <option value="Mer"> Mercedes </option>
+        <option value="Rol" selected> Rolls Royce </option>
+        <!-- selected is for default selected option -->
+      </select>
+    </div>
+    <hr>
+    <div>
+      <input type="submit" value="Submit now">
+    </div>
+    <div>
+  </form>
+</body>
+
+</html>
