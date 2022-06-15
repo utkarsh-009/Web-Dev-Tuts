@@ -22,10 +22,17 @@
       <!-- Label tag is used to provide a usability improvement for mouse users  i.e, if a user clicks on the text within the <label> element, it toggles the control. -->
       <label for="name"> Name: </label>
       <!-- div tag is block element which takes whole block and next element will in next line(block)  -->
-      <input type="text" name = "myName" id = "name"/>
+      <input type="text" name="myName" id="name" />
     </div>
     <!-- NOTE: input tag is an inline element whereas div is block element. Hence, br tag should be used  -->
     <br>
+
+    <!-- 
+      <input> tag: It specifies an input field where the user can enter data.
+      type: type of input according to attribute. ex: text, email , date, etc.
+      name: Specifies the name of an <input> element.
+      id: To identify the particular input tag.
+     -->
 
     <div>
       Role: <input type="text" />
@@ -48,11 +55,11 @@
     </div>
     <br>
     <div>
-      <label for="eligiblebox" > Are you eligible?: </label>
-      <input type="checkbox" name="myEligibility" id = "eligiblebox">
+      <label for="eligiblebox"> Are you eligible?: </label>
+      <input type="checkbox" name="myEligibility" id="eligiblebox">
     </div>
     <br>
-    <!-- as key in both female and male is myGender, therefore only either of them will be selected -->
+    <!-- *As key in both female and male is myGender, therefore only either of them will be selected* -->
     <div>
       Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender">
     </div>
@@ -65,16 +72,16 @@
     <div>
       <textarea name="myDesc" cols="50" rows="10"></textarea>
     </div>
-    
+
     <br>
-   <!-- SELECT TAG:  -->
+    <!-- SELECT TAG:  -->
     <div>
       <label for="Car">Dream Car: </label>
       <select name="myCar" id="Car">
         <br>
         <option value="Fer"> Ferrari </option>
         <option value="Mer"> Mercedes </option>
-        <option value="Rol" selected> Rolls Royce </option>
+        <option value="Tes" selected> Tesla </option>
         <!-- selected is for default selected option -->
       </select>
     </div>
