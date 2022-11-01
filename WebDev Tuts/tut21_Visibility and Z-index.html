@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index</title>
+
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: green;
+            position: relative;
+            top: 50px;
+
+            z-index: -10;
+        }
+
+        #box2 {
+
+            /* to hide element: space is still reserved for element*/
+            /* visibility: hidden; */
+
+            /* to completely remove display of element: space is not reserved for element */
+            /* display: none; */
+
+            /* An element with position: relative; is positioned relative to its normal position. */
+            position: relative;
+            top: 15px;
+
+            /* The z-index property specifies the stack order of an element. */
+            /* z-index will only for position: relative, absolute, fixed or sticky */
+            z-index: 10;
+
+            background-color: red;
+        }
+
+        #box3 {
+            background-color: blue;
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- div.box#box$*4 : Emment to create div with class box having id as box1,box2,box3,box4-->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
