@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .box {
+        background-color: red;
+        color: black;
+        font-size: 70px;
+        color: white;
+        display: none;
+
+    }
+
+    /* The @media rule is used in media queries to apply different styles for different media types/devices. */
+    /* only screen is type of media. NOTE: search on google for other types of media */
+    @media only screen and (max-width: 300px) {
+        #box-1 {
+            display: block;
+            background-color: cyan;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 500px) {
+        #box-2 {
+            display: block;
+            background-color: blueviolet;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 800px) {
+        #box-3 {
+            display: block;
+            background-color: silver;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 1000px) {
+        #box-4 {
+            display: block;
+            background-color: gold;
+        }
+    }
+</style>
+
+<body>
+    <div class="box" id="box-1"> This is Mi Phone </div>
+    <div class="box" id="box-2"> This is RealMe Tablet </div>
+    <div class="box" id="box-3"> This is ASUS Laptop </div>
+    <div class="box" id="box-4"> This is Samsung TV </div>
+</body>
+
+</html>
