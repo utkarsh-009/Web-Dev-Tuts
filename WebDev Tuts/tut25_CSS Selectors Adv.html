@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+    h1 {
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* the div p properties applies to all para inside div  */
+    /* div p {
+        color: green;
+        font-weight: bold;
+    } */
+
+    /* NOTE: In above div p, class item (div li p) in which p not direct child of div also get affected as p is indirect child of div*/
+    /* div>p means p should be direct child of div */
+    /* div>p {
+        color: green;
+        font-weight: bold;
+    } */
+
+    /* div+p means that apply property to all tags in which div should be previous sibling of p */
+    div+p {
+        color: green;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is another para inside li</p>
+                </li>
+                <li>
+                    This will not get affected
+                </li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>
