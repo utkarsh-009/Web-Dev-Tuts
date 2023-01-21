@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and Its Methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+
+        <!-- dynamically changing html using js -->
+        <div id="content"></div>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolor esse ea saepe autem doloribus totam sequi
+            dolore laudantium quidem aliquam amet eos mollitia quis, soluta ipsum adipisci deleniti quo.</p>
+    </div>
+
+    <script>
+        // string can be stored using '' or ""
+        var string = "Hello";
+        console.log(string);
+
+        // concatenation
+        var name = "Utkarsh";
+        var surname = "Patil";
+        console.log(name + surname);
+
+        // use of Backticks `` and ${}
+        var temp = `My name is ${name} ${surname}. This is 'single quote' and this is "double quote" `;
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+
+        // Escape sequence characters: \n \t (NOTE: To print \ we use \\ to interpret it as \)
+        console.log("Hello world\n Harry\t and \\ ");
+
+        // creating string using constructor
+        var y = new String("this");
+        console.log(y);
+
+        // dynamically changing html using id in javascript
+        document.getElementById('content').innerHTML = '<h3> This is a h3 heading </h3>'
+
+    </script>
+
+</body>
+
+</html>
