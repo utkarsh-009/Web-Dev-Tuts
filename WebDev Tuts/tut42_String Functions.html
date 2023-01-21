@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Functions</title>
+</head>
+
+<body>
+
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        // finding first occurence of substring using: indexOf() function 
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // finding last occurence of substring using: lastIndexOf() function
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        //  Substring from a string using: slice() function [NOTE: In slice() we can take negative values as well]
+        var substr = str.slice(1, 5);
+        console.log(substr);
+
+        //  Substring from a string using: substring() function [NOTE: in substring() we can take only positive values]
+        substr = str.substring(1, 5);
+        console.log(substr);
+
+        // Replacing one substring with other using: replace() function
+        var replaced = str.replace('string', 'utkarsh');
+        console.log(str);
+        console.log(replaced);
+
+        // For uppercase and lowercase string 
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // concatenation using: concat() function 
+        var newString = str.concat('New String');
+        console.log(newString);
+
+        // removing whitespace from front and back of string using: trim() function
+        var strWithWhiteSpaces = "  this  contains           whitespace  ";
+        console.log(strWithWhiteSpaces);
+        console.log(strWithWhiteSpaces.trim());
+
+        // returning character at given index using: charAt() function
+        var ch = str.charAt(2);
+        console.log(ch);
+
+        //  accessing string's element by index
+        console.log(str[2]);
+    </script>
+</body>
+
+</html>
