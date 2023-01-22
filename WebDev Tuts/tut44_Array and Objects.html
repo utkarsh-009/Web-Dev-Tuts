@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+
+<body>
+    <div class="container">
+        Js Tut
+    </div>
+
+    <script>
+        // Primitive data types
+        let myVar1 = 32;
+        let myVar2 = "Hello";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        // Objects stores multiple key value pairs
+        var employee = {
+            name: "Utkarsh",
+            salary: 10,
+            "college name": "VJTI"
+        }
+        console.log(employee);
+
+        /* 
+        Accessing objects:
+        1. employee.name, employee.salary valid but employee.college name is invalid
+        2. Alternative: employee[name], employee['college name']
+        */
+
+        // Array
+        let name1 = [1, 3, "abcd", true];
+        console.log(name1[2]);
+
+        // Creating Array using new array object
+        let name2 = new Array(2, 1, "abcd", true);
+        console.log(name2);
+
+        // Sorting
+        name2 = name2.sort();
+        console.log(name2);
+
+        // Pushing element in array
+        name2.push("Pushed");
+        console.log(name2);
+
+        // allocating size to the array
+        let name = new Array(23);
+
+    </script>
+</body>
+
+</html>
