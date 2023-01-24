@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops: For,While,Do-While</title>
+</head>
+
+<body>
+    <div class="container">
+        Loops Tutorial
+    </div>
+
+    <script>
+        // For loop
+        let i = 0;
+        for (i = 0; i < 3; i++) {
+            console.log(i);
+        }
+
+        // While loop
+        i = 0;
+        while (i < 3) {
+            console.log(i);
+            i++;
+        }
+
+        // Do-While
+        i = 0;
+        do {
+            console.log(i);
+            i++;
+        } while (i < 3);
+
+
+        // Array iterating
+        let players = ["Messi", "Ronaldo", "Neymar", "Suarez", "Iniesta"];
+        for (let index = 0; index < players.length; index++) {
+            const element = players[index];
+            console.log(element);
+        }
+
+        // MODERN ITERATING JS LOOPS
+
+        // Shorthand for-each loop 
+        players.forEach(function f(element) {
+            console.log("Footballer : " + element);
+        });
+
+        // Shorthand for-of loop
+        for (element of players) {
+            console.log("Footballer : " + element);
+        }
+
+        // Iterating OBJECTS
+        let employee = {
+            name: "Utkarsh",
+            surname: "Patil",
+            salary: 999999999,
+        }
+
+        // for-in loop
+        for (key in employee) {
+            console.log(`Footballer: ${key}`);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
