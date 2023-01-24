@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction: Alert, Prompt, Confirm</title>
+</head>
+
+
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        // Alert Box: in in-browser javascript: Does not return anything
+        // alert("This is a message");
+
+        // Prompty Box: prompts user to ask information
+        let name = prompt("What's your name?", "Guest") // here "Guest" is default name
+        console.log(name);
+
+        // Confirm Box: confirms the action from user
+        let delPost = confirm("Do you really want to delete post?");
+        if (delPost == true) {
+            console.log("Post has been deleted.");
+        } else {
+            console.log("Post has not been deleted.");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
