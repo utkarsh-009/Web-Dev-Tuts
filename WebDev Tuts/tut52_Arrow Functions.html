@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function Tutorial</title>
+</head>
+
+<body>
+    <div class="container">
+        This is Arrow Function Tutorial
+    </div>
+
+    <script>
+
+        // Normal function
+        // function greet() {
+        //     console.log('Good Morning');
+        // }
+        // greet();
+
+        // Arrow function
+        greet = () => {
+            console.log('Good Morning');
+        }
+        greet();
+
+        // Shortcut for function: () => {}
+        setTimeout(() => {
+            console.log("we are inside set-timeout");
+        }, 3000);
+
+
+        // Arrow function example: 
+        let sum = (a, b) => {
+            return a + b;
+        }
+
+        // Shorthand for multiple argument
+        let shortSum = (a, b) => a + b;
+        // Shorthand for single argument
+        let half = a => a / 2;
+
+        let obj1 = {
+            greeting: "Vamos",
+            name: ["Messi", "Ronaldo", "Neymar"],
+            speak() {
+                this.name.forEach(() => {
+                    console.log(this.greeting + " Waka Waka " + this.name);
+                });
+            }
+        }
+        obj1.speak();
+
+        /*
+        NOTE: this for arrow function is of parent. Hence, we can use this to access 
+        methods, variables of parent inside the function easily using this.
+        But in normal function, this is for the object of the function itself. Hence, 
+        it will give undefined as output. This is known as lexical this.
+        */
+
+    </script>
+
+</body>
+
+</html>
