@@ -6,7 +6,7 @@ const port = 3000;
 const home = fs.readFileSync('index.html')
 const about = fs.readFileSync('./about.html')
 const services = fs.readFileSync('./services.html')
-const contact = fs.readFileSync('./contact.html') 
+const contact = fs.readFileSync('./contact.html')
 
 const server = http.createServer((req, res)=>{
     console.log(req.url);
@@ -34,4 +34,4 @@ const server = http.createServer((req, res)=>{
 
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
-  });
+});
