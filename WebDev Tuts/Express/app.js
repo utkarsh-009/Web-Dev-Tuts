@@ -2,8 +2,25 @@
 const express = require("express");
 const app = express();
 
+// path module to view directory
+const path = require("path");
+
 // port
 const port = 80;
+
+// serving static file
+app.use('/static', express.static('static')) // express.static('foldername')
+
+// set the template engine as pug
+app.set('view engine', 'pug')
+
+// Set the views directory
+app.set('views', path.join(__dirname ,'views'));
+
+// Our Pug Demo Endpoint
+app.get("/demo", (req,res)=> {
+    res.status(200).render('demo', { title: 'Hey Hello!', message: 'Hello there! This is Pug Template Engine Tutorial' })
+})
 
 // get request and respose
 app.get("/", (req, res) =>{
