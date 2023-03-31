@@ -1,0 +1,14 @@
+{
+  "name": "mongoose-tut",
+  "version": "1.0.0",
+  "description": "this is mongoose tut",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "utkarsh",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.0.3"
+  }
+}
