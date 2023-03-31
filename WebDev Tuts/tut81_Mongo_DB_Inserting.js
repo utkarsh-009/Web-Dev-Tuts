@@ -1,4 +1,4 @@
-// MONGO DB TUTORIAL
+// MONGO DB TUTORIAL: Inserting documents to collections
 
 // To use database
 use ekart
