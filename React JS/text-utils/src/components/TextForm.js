@@ -19,6 +19,12 @@ export default function TextForm(props) {
         setText(upperText);
     };
 
+    const speak = () => {
+        let msg = new SpeechSynthesisUtterance();
+        msg.text = text;
+        window.speechSynthesis.speak(msg);
+    }
+
     // event is the text change in textarea, on changing the state we will setText as the value in textarea
     const handleOnChange = (event) => {
         console.log("On changed!");
@@ -27,15 +33,17 @@ export default function TextForm(props) {
 
     return (
         <>
-            <div className="my-4">
+            <div className="my-4" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
                 <h3>{props.heading}</h3>
-                <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+                {/* {{}} => object inside js */}
+                <textarea className="form-control" value={text} style={{ backgroundColor: props.mode === 'light' ? 'white' : 'grey', color: props.mode === 'dark' ? 'white' : 'black' }} onChange={handleOnChange} id="myBox" rows="8"></textarea>
             </div>
             <div>
                 <button className="btn btn-primary mx-2" onClick={handleUpperClick}>Convert To Uppercase</button>
                 <button className="btn btn-primary mx-2" onClick={handleLowerClick}>Convert To Lowercase</button>
+                <button className="btn btn-primary mx-2" onClick={speak}>Text To Speech</button>
             </div>
-            <div className="container my-3">
+            <div className="container my-3" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
                 <h4>Text Summary</h4>
                 <p> {text.trim().split(/\s+/).length} words and {text.length} characters</p>
                 <p> Read Time: {text.trim().split(/\s+/).length * 0.008} minutes </p>
