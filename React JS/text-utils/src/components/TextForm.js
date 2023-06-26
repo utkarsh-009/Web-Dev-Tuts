@@ -11,18 +11,21 @@ export default function TextForm(props) {
         console.log("Uppercase button clicked!");
         let upperText = text.toUpperCase();
         setText(upperText);
+        props.showAlert("Converted to Uppercase", "Success");
     };
 
     const handleLowerClick = () => {
         console.log("Uppercase button clicked!");
         let upperText = text.toLowerCase();
         setText(upperText);
+        props.showAlert("Converted to Lowercase", "Success");
     };
 
     const speak = () => {
         let msg = new SpeechSynthesisUtterance();
         msg.text = text;
         window.speechSynthesis.speak(msg);
+        props.showAlert("Converted Text to Speech", "Success");
     }
 
     // event is the text change in textarea, on changing the state we will setText as the value in textarea
